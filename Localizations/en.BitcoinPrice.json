@@ -1,0 +1,16 @@
+{
+    "btc": {
+        "main-menu-title": "Bitcoin price",
+        "blades": {
+            "price": {
+                "title": "Bitcoin price",
+                "subtitle": "Current bitcoin exchange rates",
+                 "labels": {
+                     "currency": "Currency",
+                     "rate": "Rate",
+                     "description": "Description"
+                 }
+            }
+        }
+    }
+}

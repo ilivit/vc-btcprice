@@ -1,0 +1,16 @@
+<div class="blade-content __medium-wide">
+    <div class="blade-inner">
+        <div class="inner-block" ng-init="setGridOptions({
+                 data: 'blade.rates',
+                 columnDefs: [
+                    { name: 'code', displayName: 'btc.blades.price.labels.currency', width: 90 },
+                    { name: 'rate', displayName: 'btc.blades.price.labels.rate' },
+                    { name: 'description', displayName: 'btc.blades.price.labels.description' }
+                 ]})">
+            <div class="table-wrapper" ng-if="blade.rates.length">
+                <div ui-grid="gridOptions" ui-grid-auto-resize ui-grid-save-state ui-grid-resize-columns ui-grid-move-columns ui-grid-height></div>
+            </div>
+            <div class="note" ng-if="!blade.rates.length">{{ 'platform.list.no-data' | translate }}</div>
+        </div>
+    </div>
+</div>
